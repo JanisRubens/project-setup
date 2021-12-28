@@ -42,10 +42,10 @@ ESlint helps keeping code tidy and consistent.
 
 Run `npm install eslint --save-dev`  
 Run `./node_modules/.bin/eslint --init` this will create `eslintrc` file  
-Run `./node_modules/.bin/eslint yourfile.js` to run lint. Create a script that lints all `/src` folder.
+Run `./node_modules/.bin/eslint yourfile.js` to run lint. Create a script that lints all `/src` folder.  
 Setup your ESlint config in `eslintrc` file  
 
-More about ESlint [Here](https://eslint.org/docs/user-guide/getting-started)
+More about ESlint [Here](https://eslint.org/docs/user-guide/getting-started)  
 ### Add docker support
 
 ## Front-end dependencies
