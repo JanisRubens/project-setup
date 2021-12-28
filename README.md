@@ -22,15 +22,29 @@ Run `git init`
 Add `.gitignore` file.  
 Run `git add . && git commit -m 'Initial commit'`.  
 
-## Front-end
-### Add webpack support
-### Add typescript support
+## Project dependencies
+### Add babel support
+Babel is a javascript compiler that compiles beta features in vannila js.  
+More about babel setup [Here](https://babeljs.io/)
+  
+Install core dep:  
+Run `npm install --save-dev babel-loader @babel/core` 
+Create babel config file:  
+Run `touch babel.config.js`  
 
-## Dev-ops
+Add babel support for webpack/node/typescript.
+
 ### Add eslint support
 ### Add docker support
 
-## Back-end
+## Front-end dependencies
+### Add webpack support
+### Add typescript support
 
-## Common dependencie list
+## Back-end dependencies
+### Nodemon support.
+Nodemon reloads your server on code changes.
+
+Run `npm install nodemon --save-dev`  
+Use as `nodemon <back-end entry>.js`  
 
