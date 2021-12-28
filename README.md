@@ -46,6 +46,18 @@ Run `./node_modules/.bin/eslint yourfile.js` to run lint. Create a script that l
 Setup your ESlint config in `eslintrc` file  
 
 More about ESlint [Here](https://eslint.org/docs/user-guide/getting-started)  
+
+### Add config file support
+There are multiple good config dependencies like .dotenv cross-env and config.  
+For time being I choose config.  
+
+Run `npm install config`  
+Run `mkdir config`  
+Run `touch default.yml`  
+Run `touch local.yml`  
+
+More about the dependency [Here](https://www.npmjs.com/package/config)
+
 ### Add docker support
 
 ## Front-end dependencies
