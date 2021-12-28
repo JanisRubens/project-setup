@@ -7,9 +7,9 @@ Run `npm init -y` to skip all questions.
 More about the command [Here](https://docs.npmjs.com/cli/v8/commands/npm-init).  
 
 ### Initialize .git repo for the project.
-Run `git init`
-Add `.gitignore` file.
-Run `git add . && git commit -m 'Initial commit'`.
+Run `git init`  
+Add `.gitignore` file.  
+Run `git add . && git commit -m 'Initial commit'`.  
 
 ### Add webpack dependecy
 
