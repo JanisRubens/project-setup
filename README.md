@@ -1,4 +1,4 @@
-# project-setup
+# Project-setup
 Bunch of instructions so I dont have to google each time I start a project.
 
 ### [Optional] Set npm init defaults.
@@ -19,7 +19,10 @@ More about the command [Here](https://docs.npmjs.com/cli/v8/commands/npm-init).
 
 ### Initialize .git repo for the project.
 Run `git init`  
-Add `.gitignore` file.  
+Add git project files.
+`touch .gitignore`
+`touch README.md`
+`touch CHANGELOG.md`
 Run `git add . && git commit -m 'Initial commit'`.  
 
 ## Project dependencies
@@ -35,6 +38,14 @@ Run `touch babel.config.js`
 Add babel support for webpack/node/typescript.
 
 ### Add eslint support
+ESlint helps keeping code tidy and consistent.  
+
+Run `npm install eslint --save-dev`  
+Run `./node_modules/.bin/eslint --init` this will create `eslintrc` file  
+Run `./node_modules/.bin/eslint yourfile.js` to run lint. Create a script that lints all `/src` folder.
+Setup your ESlint config in `eslintrc` file  
+
+More about ESlint [Here](https://eslint.org/docs/user-guide/getting-started)
 ### Add docker support
 
 ## Front-end dependencies
