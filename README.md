@@ -33,7 +33,8 @@ More about babel setup [Here](https://babeljs.io/)
 Install core dep:  
 Run `npm install --save-dev babel-loader @babel/core` 
 Create babel config file:  
-Run `touch babel.config.js`  
+Run `touch babel.config.js` -- This is for global babel presets  
+Run `touch .babelrc` -- This is for file/directory specific presets    
 
 Add babel support for webpack/node/typescript.
 
@@ -44,6 +45,7 @@ Run `npm install eslint --save-dev`
 Run `./node_modules/.bin/eslint --init` this will create `eslintrc` file  
 Run `./node_modules/.bin/eslint yourfile.js` to run lint. Create a script that lints all `/src` folder.  
 Setup your ESlint config in `eslintrc` file  
+Create `.eslintignore` and add nodemodules to it if you are using global eslint
 
 More about ESlint [Here](https://eslint.org/docs/user-guide/getting-started)  
 
@@ -62,6 +64,37 @@ More about the dependency [Here](https://www.npmjs.com/package/config)
 
 ## Front-end dependencies
 ### Add webpack support
+Bundler for JS code.  
+
+Install deps:  
+Run `npm install --save-dev webpack webpack-dev-server webpack-cli`  
+Create config file:  
+Run `touch webpack.config.js`  
+Really simple webpack config example:  
+```
+const path = require('path');
+
+module.exports = {
+  entry: path.resolve(__dirname, './src/index.js'),
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    filename: 'bundle.js',
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, './dist'),
+  },
+};
+```
+Add script to package.json file:  
+`"dev": "webpack serve --config ./webpack.config.js --mode development",`  
+
+Plugins worth adding:  
+* [Manifest](https://www.npmjs.com/package/webpack-manifest-plugin) - adds content hashes that helps with browser caching.  
+* [Clean WP](https://www.npmjs.com/package/clean-webpack-plugin) - removes/cleans your build folder(s).  
+* [Copy WP](https://www.npmjs.com/package/copy-webpack-plugin) - Copies files/directories to build folder.  
+* [Html WP](https://www.npmjs.com/package/html-webpack-plugin) - Creates html files with hashes for build folder.  
+* 
+
 ### Add typescript support
 
 ## Back-end dependencies
@@ -70,4 +103,8 @@ Nodemon reloads your server on code changes.
 
 Run `npm install nodemon --save-dev`  
 Use as `nodemon <back-end entry>.js`  
+
+
+### Helpful links:
+Really nice blog for setting up a lot of modern things. [Here](https://www.robinwieruch.de/javascript-project-setup-tutorial/)
 
