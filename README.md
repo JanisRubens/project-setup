@@ -47,6 +47,17 @@ Run `./node_modules/.bin/eslint yourfile.js` to run lint. Create a script that l
 Setup your ESlint config in `eslintrc` file  
 Create `.eslintignore` and add nodemodules to it if you are using global eslint
 
+Example config using AirBnB: 
+```
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "rules": {
+    "max-len": [1, 70, 2, { "ignoreComments": true }]
+  }
+}
+```
+
 More about ESlint [Here](https://eslint.org/docs/user-guide/getting-started)  
 
 ### Add config file support
