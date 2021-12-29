@@ -19,11 +19,11 @@ More about the command [Here](https://docs.npmjs.com/cli/v8/commands/npm-init).
 
 ### Initialize .git repo for the project.
 Run `git init`  
-Add git project files.
-`touch .gitignore`
-`touch README.md`
-`touch CHANGELOG.md`
-Run `git add . && git commit -m 'Initial commit'`.  
+Add git project files.  
+`touch .gitignore`  
+`touch README.md`  
+`touch CHANGELOG.md`  
+Run `git add . && git commit -m 'Initial commit'`.    
 
 ## Project dependencies
 ### Add babel support
